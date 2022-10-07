@@ -1,20 +1,15 @@
-name = ""
-atomic_mass = 0.0
-
 def main():
 
-    make_periodic_table()
-    for item in periodic_table_list:
-        print(f"name: {name} atomic mass: {atomic_mass}")
-    return
+    periodic_table_list = make_periodic_table()
+    for name in periodic_table_list[1]:
+        print(f"name: {name}")
+    for atomic_mass in periodic_table_list[2]:
+        print(f"atomic mass: {atomic_mass}")
     
 def make_periodic_table():
-    # SYMBOL_INDEX = ""
-    # NAME_INDEX = ""
-    # ATOMIC_MASS_INDEX = 0.00
     
     periodic_table_list = [
-        # ["symbol", "name", "atomic_mass"]
+        # ["symbol 0", "name 1", "atomic_mass 2"]
         ["Ac", "Actinium", 227],
         ["Ag", "Silver", 107.8682],
         ["Al", "Aluminum", 26.9815386],
@@ -113,9 +108,6 @@ def make_periodic_table():
     
     name = periodic_table_list[1]
     atomic_mass = periodic_table_list[2]
-    
-    # name = ch_name[NAME_INDEX]
-    # atomic_mass = ch_atomic_mass[ATOMIC_MASS_INDEX]
     
         
     return periodic_table_list
