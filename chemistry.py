@@ -1,10 +1,12 @@
-from test_chemistry_1 import ATOMIC_MASS_INDEX, NAME_INDEX, SYMBOL_INDEX
-
+name = ""
+atomic_mass = 0.0
 
 def main():
-    
+
     make_periodic_table()
-    
+    for item in periodic_table_list:
+        print(f"name: {name} atomic mass: {atomic_mass}")
+    return
     
 def make_periodic_table():
     # SYMBOL_INDEX = ""
@@ -109,14 +111,14 @@ def make_periodic_table():
         ["Zr",	"Zirconium", 91.224]
     ]
     
-    name = periodic_table_list[2]
-    atomic_mass = periodic_table_list[3]
+    name = periodic_table_list[1]
+    atomic_mass = periodic_table_list[2]
     
     # name = ch_name[NAME_INDEX]
     # atomic_mass = ch_atomic_mass[ATOMIC_MASS_INDEX]
     
         
-    print(f"name: {name} atomic mass: {atomic_mass}")
+    return periodic_table_list
 
     
 main()
